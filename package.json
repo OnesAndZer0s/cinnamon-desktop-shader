@@ -1,0 +1,23 @@
+{
+  "name": "desktopshaders",
+  "version": "3.0.0",
+  "description": "Simple Gnome Shell Hello World Extension example",
+  "main": "dist/extension.js",
+  "private": true,
+  "scripts": {
+    "clear": "rm -rf dist",
+    "build:app": "node esbuild.js",
+    "build": "yarn run clear && yarn run build:app",
+    "validate": "tsc --noEmit"
+  },
+  "author": "Pascal Garber <pascal@artandcode.studio>",
+  "license": "MIT",
+  "devDependencies": {
+    "adm-zip": "^0.5.10",
+    "esbuild": "^0.17.19",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@girs/gnome-shell": "workspace:^"
+  }
+}

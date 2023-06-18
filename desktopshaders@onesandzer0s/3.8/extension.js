@@ -1,1 +1,1 @@
-../3.2/extension.js
+/home/tayler/Programming/cinnamon-desktop-shader/desktopshaders@onesandzer0s/3.2/extension.js

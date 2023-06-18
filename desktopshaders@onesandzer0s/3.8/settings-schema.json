@@ -24,8 +24,7 @@
 	"custom-icon": {
 		"type": "iconfilechooser",
 		"description": "Custom icon or image",
-		"default": "start-here-symbolic",
-		"dependency": "icon=other"
+		"default": "start-here-symbolic"
 	},
 
 	"alpha": {
@@ -67,8 +66,7 @@
 		"min": 0,
 		"max": 512,
 		"step": 1,
-		"units": "px",
-		"dependency": "position-x!=50"
+		"units": "px"
 	},
 
 	"position-y": {
@@ -89,8 +87,7 @@
 		"min": 0,
 		"max": 512,
 		"step": 1,
-		"units": "px",
-		"dependency": "position-y!=50"
+		"units": "px"
 	},
 
 	"section2": {
