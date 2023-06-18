@@ -1,0 +1,17 @@
+{
+	"name": "Desktop Shaders",
+	"uuid": "desktopshaders@onesandzer0s",
+	"version": "1.0",
+	"description": "Run some shaders on your desktop.",
+	"url": "https://github.com/OnesAndZer0s/cinnamon-desktop-shader",
+	"website": "https://github.com/OnesAndZer0s/cinnamon-desktop-shader",
+	"multiversion": true,
+	"cinnamon-version": [
+		"3.4",
+		"3.6",
+		"3.8",
+		"4.0",
+		"4.2",
+		"4.4"
+	]
+}
