@@ -143,7 +143,6 @@ class DesktopShaderExtension {
 			Mainloop.source_remove( this._timeoutid );
 			this._timeoutid = 0;
 		}
-		
 
 		if ( is_reset ) {
 			/* We need to wait more than 2000ms, that is the time the
@@ -242,7 +241,7 @@ class Shader {
 		box = this.manager.position_y === 50 ? this.monitor : desktop;
 		let y = box.y + ( box.height - this.actor.height ) * this.manager.position_y / 100;
 
-		this.actor.set_position( Math.floor( x ), Math.floor( y ) );
+		this.actor.set_position( Math.floor( x), Math.floor( y ) );
 	}
 
 	get_watermark () {

@@ -7,8 +7,8 @@
   "scripts": {
     "clear": "rm -rf dist",
     "build:app": "npx esbuild extension.ts --bundle \"--external:gi://*\" \"--external:system\" \"--external:gettext\" \"--external:cario\" --tree-shaking=false --platform=node --target=firefox78 --outdir=desktopshaders@onesandzer0s/3.2/",
-    "watch": "npx esbuild extension.ts --bundle \"--external:gi://*\" \"--external:system\" \"--external:gettext\" \"--external:cario\" --tree-shaking=false --platform=node --target=firefox78 --outdir=desktopshaders@onesandzer0s/3.2/ --watch",
-
+    "watch": "npx esbuild extension.ts --bundle \"--external:gi://*\" \"--external:system\" \"--external:gettext\" \"--external:cario\" --tree-shaking=false --platform=node --target=firefox78 --outdir=desktopshaders@onesandzer0s/3.2/ --watch=forever & nodemon --exec 'yarn run reload' --watch desktopshaders@onesandzer0s/3.2/extension.js",
+    "reload":"dbus-send --session --dest=org.Cinnamon.LookingGlass --type=method_call /org/Cinnamon/LookingGlass org.Cinnamon.LookingGlass.ReloadExtension string:'desktopshaders@onesandzer0s' string:'EXTENSION'",
     "build": "yarn run clear && yarn run build:app",
     "validate": "tsc --noEmit"
   },
