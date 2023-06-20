@@ -206,7 +206,7 @@ var Shader = class {
     let x = box.x + (box.width - this.actor.width) * this.manager.position_x / 100;
     box = this.manager.position_y === 50 ? this.monitor : desktop;
     let y = box.y + (box.height - this.actor.height) * this.manager.position_y / 100;
-    this.actor.set_position(Math.floor(x + Math.random() * 100), Math.floor(y));
+    this.actor.set_position(Math.floor(x), Math.floor(y));
   }
   get_watermark() {
     let size = this.manager.size * global.ui_scale;

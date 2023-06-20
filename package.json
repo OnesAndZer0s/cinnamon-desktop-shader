@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "clear": "rm -rf dist",
-    "build:app": "node esbuild.js",
+    "build:app": "npx esbuild extension.ts --bundle \"--external:gi://*\" \"--external:system\" \"--external:gettext\" \"--external:cario\" --tree-shaking=false --platform=node --target=firefox78 --outdir=desktopshaders@onesandzer0s/3.2/",
+    "watch": "npx esbuild extension.ts --bundle \"--external:gi://*\" \"--external:system\" \"--external:gettext\" \"--external:cario\" --tree-shaking=false --platform=node --target=firefox78 --outdir=desktopshaders@onesandzer0s/3.2/ --watch",
+
     "build": "yarn run clear && yarn run build:app",
     "validate": "tsc --noEmit"
   },
